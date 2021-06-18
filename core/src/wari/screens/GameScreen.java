@@ -69,6 +69,7 @@ public class GameScreen implements Screen {
 
 		font = new BitmapFont(Gdx.files.internal("font/x1.0/the-next-font.fnt"));
 		//font.setScale(.2f, -.2f);  TODO : comment neden
+		font.getData().setScale(0.2f,0.2f);
 
 	}
 
