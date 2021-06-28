@@ -81,7 +81,7 @@ public class Hole {
 			};
 
 			for (Sprite s : seeds) {
-				Tween t = Tween.to(s, Tweener.POSITION, .09f).target(x + (width + s.getWidth()) / 2, y - 10 + (height + s.getHeight()) / 2).ease(TweenEquations.easeOutExpo);
+				Tween t = Tween.to(s, Tweener.POSITION, 1.09f).target(x + (width + s.getWidth()) / 2, y - 10 + (height + s.getHeight()) / 2).ease(TweenEquations.easeOutExpo);
 				if (!addedCallback) {
 					t.setCallbackTriggers(TweenCallback.END).setCallback(callback);
 					addedCallback = true;
@@ -109,8 +109,8 @@ public class Hole {
 		float r = MathUtils.random() * 360;
 
 		if (useTween) {
-			Tween.to(s, Tweener.POSITION, .5f).target(x + x0, y + y0).ease(TweenEquations.easeInOutQuad).start(Table.tweenManager);
-			Tween.to(s, Tweener.ROTATION, .5f).target(r).ease(TweenEquations.easeInOutQuad).start(Table.tweenManager);
+			Tween.to(s, Tweener.POSITION, 1.5f).target(x + x0, y + y0).ease(TweenEquations.easeInOutQuad).start(Table.tweenManager);
+			Tween.to(s, Tweener.ROTATION, 1.5f).target(r).ease(TweenEquations.easeInOutQuad).start(Table.tweenManager);
 		} else {
 			s.setPosition(x + x0, y + y0);
 			s.rotate(r);

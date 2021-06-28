@@ -114,7 +114,7 @@ public class Table implements InputProcessor {
 		selectionBox = new Sprite(GameScreen.selectionBox);
 		arm = new Arm(this);
 
-		Tween.to(selectionBox, Tweener.SCALE, .5f).ease(TweenEquations.easeNone).target(1.4f, 1.4f).repeatYoyo(Tween.INFINITY, 0).start(tweenManager);
+		Tween.to(selectionBox, Tweener.SCALE, 0.6f).ease(TweenEquations.easeNone).target(1.4f, 1.4f).repeatYoyo(Tween.INFINITY, 0).start(tweenManager);
 	}
 
 	public void update(OrthographicCamera camera, float delta) {

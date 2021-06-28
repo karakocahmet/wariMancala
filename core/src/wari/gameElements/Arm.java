@@ -114,15 +114,15 @@ public class Arm extends Sprite {
 	}
 
 	public Tween moveUp() {
-		return Tween.to(this, Tweener.POSITION, 0.15f).targetRelative(0, -20).ease(TweenEquations.easeInOutQuad);
+		return Tween.to(this, Tweener.POSITION, 1.15f).targetRelative(0, -20).ease(TweenEquations.easeInOutQuad);
 	}
 
 	public Tween moveToHole(Hole h) {
-		return Tween.to(this, Tweener.POSITION, .4f).target(h.getX(), h.getY() - ARM_SIZE / 2 - 20).ease(TweenEquations.easeInOutQuad);
+		return Tween.to(this, Tweener.POSITION, 1.4f).target(h.getX(), h.getY() - ARM_SIZE / 2 - 20).ease(TweenEquations.easeInOutQuad);
 	}
 
 	public Tween moveDown() {
-		return Tween.to(this, Tweener.POSITION, 0.15f).targetRelative(0, 20).ease(TweenEquations.easeInOutQuad);
+		return Tween.to(this, Tweener.POSITION, 1.15f).targetRelative(0, 20).ease(TweenEquations.easeInOutQuad);
 	}
 
 	public void setSeeds(int seeds) {
